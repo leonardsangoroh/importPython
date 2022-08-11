@@ -24,3 +24,14 @@ type(number)
 new_number = str(number)
 
 print(new_number)
+
+#coding exercise
+#add 2 digits in a number
+
+two_digit_number = input("Type a two digit number")
+
+#convert to int since input is received as string
+numberOne = int(two_digit_number[0])
+numberTwo = int(two_digit_number[1])
+
+print(numberOne + numberTwo)
