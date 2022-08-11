@@ -1,9 +1,6 @@
 #data types
 
 #string
-from operator import truediv
-
-
 print("Hello"[4])
 
 #integer
@@ -15,3 +12,15 @@ print(222 + 444)
 #boolean
 True
 False
+
+# checking data type
+number = len("Hello")
+
+#returns data type
+type(number)
+
+#typecasting (changing a data type to another)
+
+new_number = str(number)
+
+print(new_number)
