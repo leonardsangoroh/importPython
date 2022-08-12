@@ -13,4 +13,4 @@
 #exponential
 4 ** 4
 
-#if there are more than one operators
+#if there are more than one operators, follow PEMDAS
