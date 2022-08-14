@@ -1,6 +1,9 @@
 #data types
 
 #string
+import string
+
+
 print("Hello"[4])
 
 #integer
@@ -35,3 +38,20 @@ numberOne = int(two_digit_number[0])
 numberTwo = int(two_digit_number[1])
 
 print(numberOne + numberTwo)
+
+#number modification
+
+#rounding numbers
+
+#round to 2 decimal places
+print(round(2.666666, 2))
+
+#flooring - dividing a number and leaving the result in integer form
+
+print(9 // 2)
+
+#User scores a point
+
+score = 0
+
+score += 1
