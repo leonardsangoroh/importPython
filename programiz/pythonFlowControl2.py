@@ -80,3 +80,47 @@ for i in digits:
     print(i)
 else:
     print('No items left')
+
+########################################while loop############################################
+
+#program to display numbers from 1 to 5
+
+i = 1
+n = 5
+
+while i<n:
+    print(i)
+    i = i + 1
+
+#example two
+total = 0
+
+number = int(input("Enter a number: "))
+
+#add numbers until number is zero
+while number != 0:
+    total += number
+
+    number = int(input("Enter a number"))
+
+print('total = ', total)
+
+###################################infinite while loop#######################################
+#age = 32
+
+#while age > 18:
+#    print('Go and vote')
+
+###################################while loop with else#######################################
+#the else block is executed it the while loop is terminated by a break statement
+
+counter = 0
+
+while counter < 3:
+    if counter == 1:
+        break
+    
+    print('inside loop')
+    counter = counter +1
+else:
+    print('Inside else')
