@@ -151,3 +151,18 @@ for k in range(5):
     if k == 3:
         continue
     print(k)
+
+###################################pass statement#######################################
+# the pass statement is a null statemnt that can be used as a placeholder for future code
+nn = 10
+
+if nn>10:
+    pass
+
+print('Hello')
+
+def function(args):
+    pass
+
+class Example:
+    pass
