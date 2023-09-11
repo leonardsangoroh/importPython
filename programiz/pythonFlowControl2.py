@@ -124,3 +124,22 @@ while counter < 3:
     counter = counter +1
 else:
     print('Inside else')
+
+###################################break & continue#######################################
+#used to terminate a loop immediately when its encountered
+
+#used to terminate a for loop when a certain condition is met
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+
+#used to terminate a while loop
+ii = 1
+
+while ii<=10:
+    print('6 * ', (ii), '=', 6*i)
+
+    if ii >=5:
+        break
+    ii = i + 1
