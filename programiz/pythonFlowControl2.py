@@ -143,3 +143,11 @@ while ii<=10:
     if ii >=5:
         break
     ii = i + 1
+
+
+#continue statement is used to skip the current iteration of the loop and the control flow of
+# the program goes to the next iteration
+for k in range(5):
+    if k == 3:
+        continue
+    print(k)
