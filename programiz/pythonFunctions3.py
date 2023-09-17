@@ -83,3 +83,44 @@ nisalimie()
 nisalimieVizuri = lambda name : print("Semaje ", name)
 
 nisalimieVizuri('Lee Leonard Sangoroh')
+
+###############################python variable scope##############################
+
+#local variable
+def greet():
+    #local variable
+    message = 'Hello'
+    print(message)
+
+greet()
+#when you try to print 'message' variable outside the greet function, it will bring a NameError
+
+#global variable
+#declared outside a function or in global scope
+message = 'Hello'
+
+def greet():
+    #declare local variable
+    print('Local ', message)
+
+greet()
+print('Global ', message)
+
+#nonlocal variable
+# outside function 
+def outer():
+    message = 'local'
+
+    # nested function  
+    def inner():
+
+        # declare nonlocal variable
+        nonlocal message
+
+        message = 'nonlocal'
+        print("inner:", message)
+
+    inner()
+    print("outer:", message)
+
+outer()
