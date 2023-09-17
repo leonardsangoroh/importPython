@@ -124,3 +124,22 @@ def outer():
     print("outer:", message)
 
 outer()
+
+###############################python global keyword##############################
+#used to create a global variable and make changes to the variable in a local context
+
+#a global variable can be accessed but not modified from inside a function
+
+#the global keyword is used inside a function to read and write a global variable
+
+c = 1
+
+def add():
+    global c
+
+    c = c + 1
+
+    print(c)
+
+add()
+
