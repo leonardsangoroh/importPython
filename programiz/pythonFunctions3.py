@@ -143,3 +143,20 @@ def add():
 
 add()
 
+###############################python modules##############################
+#a module is a file that contains code to perform a specific task
+import moduleOne
+
+g = moduleOne.add(67,84)
+print(g)
+
+#python from...import statement
+#import specific names from a module without importing the modules as a whole
+from math import pi
+print(pi)
+
+#import all
+from math import *
+
+#checking all names defined in a module
+dir(moduleOne)
