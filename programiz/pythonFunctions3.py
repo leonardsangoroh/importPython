@@ -143,7 +143,7 @@ def add():
 
 add()
 
-###############################python modules##############################
+#################################python modules################################
 #a module is a file that contains code to perform a specific task
 import moduleOne
 
@@ -160,3 +160,6 @@ from math import *
 
 #checking all names defined in a module
 dir(moduleOne)
+
+#################################python package################################
+# a package is a container that has various functions to perform specific tasks
