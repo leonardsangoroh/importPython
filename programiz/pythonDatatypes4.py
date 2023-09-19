@@ -133,3 +133,17 @@ nambariHalisi = []
 
 for n in range(1,6):
     nambariHalisi.append(n**2)
+
+##################################python tuples########################################
+#same as list, just that tuples are immutable
+
+#creating a tuple
+myTuple = (1, 'Lee', 'Leonard', 'Lee')
+print(myTuple)
+
+#accessing elements
+print(myTuple[2])
+
+#python tuple methods
+print(myTuple.count('Lee')) # counts total number of 'p' in myTuple
+print(myTuple.index('Lee')) # returns the first index occurrence of l in myTuple
