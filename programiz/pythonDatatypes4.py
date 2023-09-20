@@ -197,3 +197,72 @@ name = 'Leonard'
 country = 'Kenya'
 
 print(f'{name} is from {country}')
+
+##################################python sets########################################
+#a collection of unique data
+#sets are mutable
+#a set can have any number of items and they may be of different types
+
+#create a set of mixed data types
+mixedSet = {'Hello', 101, -2, 'Bye'}
+print(mixedSet)
+
+#create an empty set
+emptySet = set()
+
+#empty dictionary
+emptyDictionary = {}
+
+#add & update items to a set
+mixedSet.add(34)
+
+#update - used to update the set with items of other collection types(lists, tuples, sets)
+companies = {'Toyota','Mitsubishi','Chevrolet'}
+
+tech_companies = ['Google', 'FaceBook']
+
+companies.update(tech_companies)
+
+print(companies)
+
+#remove elements from a set
+companies.discard('Toyota')
+
+#iterate over a set in python
+for company in companies:
+    print(companies)
+
+#number of sets elements
+print(len(companies))
+
+#python set operations
+
+A = {1,3,5}
+
+B = {0,2,4}
+
+#union
+print(A|B)
+
+print(A.union(B))
+
+#intersection
+print(A & B)
+
+print(A.intersection(B))
+
+#difference btw 2 sets
+#what is in A but not in B
+print(A - B)
+print(A.difference(B))
+
+#set symmetric difference
+#in A and B but not in both
+print(A ^ B)
+print(A.symmetric_difference(B))
+
+#check it two sets are equal
+if A == B:
+    print('Set A and Set B are equal')
+else:
+    print('Set A and Set B are not equal')
