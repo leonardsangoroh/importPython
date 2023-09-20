@@ -266,3 +266,39 @@ if A == B:
     print('Set A and Set B are equal')
 else:
     print('Set A and Set B are not equal')
+
+
+##################################python dictionary########################################
+country_capitals = {
+  "United States": "Washington D.C.", 
+  "Italy": "Rome", 
+  "England": "London"
+}
+
+print(country_capitals)
+
+#check length
+print(len(country_capitals))
+
+#access dictionary items
+print(country_capitals["England"])
+
+#change dictionary items
+country_capitals["England"] = "Changed"
+
+#add an item
+country_capitals["Germany"] = "Berlin"
+
+#remove item
+del country_capitals["Germany"]
+
+#remove all items
+country_capitals.clear()
+
+#membership test
+print('England' not in country_capitals)
+
+#iterating through a dictionary
+for capital in country_capitals:
+    x = country_capitals[capital]
+    print(x)
