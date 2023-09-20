@@ -147,3 +147,53 @@ print(myTuple[2])
 #python tuple methods
 print(myTuple.count('Lee')) # counts total number of 'p' in myTuple
 print(myTuple.index('Lee')) # returns the first index occurrence of l in myTuple
+
+
+##################################python strings########################################
+#python strings are immutable, meaning characters of a string cannot be changed
+
+#access string characters in python
+greet = 'hello'
+
+print(greet[1]) #prints 'e'
+
+#slicing
+print(greet[1:4])
+
+#multiline string
+message = """
+One day you'll leave this world behind,
+So live a life you will remember
+"""
+
+#string operations
+
+#compare 2 strings
+stringOne = 'hello'
+stringTwo = 'Helllo'
+
+print(stringOne == stringTwo) #returns False
+
+#join two or more strings
+print(stringTwo + stringOne)
+
+
+#iterate through a python string
+for character in stringOne:
+    print(character)
+
+#python string length
+print(len(stringOne))
+
+#string membership test
+print('h' in stringOne) #true
+
+#escape sequence in python
+print('Lee said, \"Managu unatoa wapi Nairobi" ')
+
+#f-strings
+#easy to print values and variables
+name = 'Leonard'
+country = 'Kenya'
+
+print(f'{name} is from {country}')
