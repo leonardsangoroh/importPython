@@ -31,3 +31,32 @@ os.rmdir('newOne')
 import shutil
 
 shutil.rmtree('mydir')
+
+###################python exception handling###########################
+#exceptions abnormally terminate the execution of a program
+#hence we are supposed to handle these exceptions
+try:
+    #code that may cause an exception
+    numerator = 10
+    denominator = 0
+
+    result = numerator/denominator
+
+    print(result)
+except:
+    #code to run when exception occurs
+    print('Denominator cannot be 0')
+
+#catching specific exceptions in python
+try:
+    
+    even_numbers = [2,4,6,8]
+    print(even_numbers[5])
+
+except ZeroDivisionError:
+    print("Denominator cannot be 0.")
+    
+except IndexError:
+    print("Index Out of Bound.")
+
+#python try with else clause
