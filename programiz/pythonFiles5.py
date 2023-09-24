@@ -84,3 +84,47 @@ except:
     print("Error: Denominator cannot be 0")
 finally:
     print("This must be executed")
+
+#python custom exceptions
+#we can define custom exceptions by creating a new class that is derived from the built-in
+#Exception class
+
+#when developing a large python program, its good practice to place all user-defined
+#exceptions in a separate file
+
+class InvalidAgeException(Exception):
+
+    pass
+number = 18
+
+try:
+    inputNum = int(input("Enter a number: "))
+    if inputNum < number:
+        raise InvalidAgeException
+    else:
+        print('Eligible to vote')
+
+except InvalidAgeException:
+    print('Exception occurred: Invalid Age')
+
+
+#customizing the exception class
+
+
+class SalaryNotInRangeError(Exception):
+    """Exception raised for errors in the input salary.
+
+    Attributes:
+        salary -- input salary which caused the error
+        message -- explanation of the error
+    """
+
+    def __init__(self, salary, message="Salary is not in (5000, 15000) range"):
+        self.salary = salary
+        self.message = message
+        super().__init__(self.message)
+
+
+salary = int(input("Enter salary amount: "))
+if not 5000 < salary < 15000:
+    raise SalaryNotInRangeError(salary)
